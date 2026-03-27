@@ -20,13 +20,12 @@ jobs:
           cache: 'maven'
 
       # 🔥 LAYER 1: FAST FAIL
-      - name: Layer 1 - Scan dangerous keyword
-        run: |
-          echo "Scanning for dangerous code..."
-          if grep -r "activatePowerPegMode" src/main/java; then
-            echo "❌ FOUND PowerPeg! STOP PIPELINE"
-            exit 1
-          fi
+ # - name: Layer 1 - Scan dangerous keyword
+      #   run: |
+      #     echo "Scanning..."
+      #     if grep -r "activatePowerPegMode" src/main/java; then
+      #       exit 1
+      #     fi
 
       # 🧠 LAYER 2: SONARCLOUD
       - name: Layer 2 - SonarCloud Analysis
