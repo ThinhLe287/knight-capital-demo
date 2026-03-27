@@ -35,7 +35,6 @@ jobs:
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
          -Dsonar.projectKey=thinhle287_knight-capital-demo \
          -Dsonar.organization=thinhle287 \
-         -Dsonar.host.url=https://sonarcloud.io
 
 
       # 📦 BUILD
