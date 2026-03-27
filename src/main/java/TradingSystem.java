@@ -14,11 +14,11 @@ public class TradingSystem {
 
     public static void executeOrder(int flag) {
         if (flag == 1) {
-            activatePowerPegMode();
+            runPowerPeg();
         }
     }
 
-    private static void activatePowerPegMode() {
+    private static void runPowerPeg() {
         int orders = 0;
         while (true) {
             orders++;
